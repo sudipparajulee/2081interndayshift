@@ -1,0 +1,40 @@
+body{
+    font-family: sans-serif;
+    margin: 0;
+}
+
+.navbar{
+    background-color: rgb(32, 32, 152);
+}
+
+.menu{
+    margin: 0;
+    list-style-type: none;
+    text-align: right;
+    padding: 15px;
+}
+
+.menu a{
+    color: white;
+    text-decoration: none;
+}
+
+.menu li{
+    display: inline;
+    padding: 10px;
+}
+
+.service-container{
+    margin: 50px;
+}
+
+.service1, .service2, .service3{
+    background-color: rgb(250, 250, 250);
+    color: rgb(59, 58, 58);
+    width: 29%;
+    display: inline-block;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 8px;
+    box-shadow: 1px 2px 5px rgb(200, 200, 200);
+}

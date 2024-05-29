@@ -1,0 +1,46 @@
+body{
+    font-family: sans-serif;
+    margin: 0;
+}
+
+.pricing-section{
+    background-color: rgb(238, 238, 238);
+}
+
+.pricing-section> h1{
+    text-align: center;
+}
+
+.pricing-container{
+    padding: 10px 100px;
+}
+
+.outer-pricing{
+    width: 33%;
+    display: inline-block;
+}
+
+.pricing{
+    background-color: white;
+    text-align: center;
+    margin: 10px;
+    border-radius: 8px;
+}
+
+.pricing-heading{
+    background-color: red;
+    color: white;
+    border-radius: 8px 8px 0 0;
+}
+
+.purchase{
+    padding: 20px;
+}
+
+.purchase a{
+    background-color: rgb(215, 213, 213);
+    color: black;
+    text-decoration: none;
+    padding: 5px 20px;
+    border-radius: 20px;
+}

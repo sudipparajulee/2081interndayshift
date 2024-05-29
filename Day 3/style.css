@@ -1,0 +1,34 @@
+body{
+    font-family: sans-serif;
+}
+
+.service-section{
+    padding: 50px 100px;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.section-title h2{
+    margin: 0;
+}
+
+.section-title p{
+    margin: 0;
+    color: #777;
+}
+
+.outer-service{
+    width: 33%;
+    display: inline-block;
+}
+
+.service{
+    margin: 10px;
+    background-color: rgb(237, 234, 234);
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 1px 2px 5px rgb(238, 237, 237);
+}
