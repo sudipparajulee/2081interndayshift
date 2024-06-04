@@ -1,0 +1,28 @@
+body{
+    font-family: sans-serif;
+}
+
+.myform{
+    width: 400px;
+    background-color: rgb(161, 161, 249);
+    margin: 50px auto;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 1px 2px 8px rgb(211, 209, 209);
+}
+
+.form-control{
+    margin: 10px 0;
+}
+
+.form-control label{
+    display: block;
+    font-weight: bold;
+}
+
+.form-control input{
+    width: 95%;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid rgb(161, 161, 249);
+}
