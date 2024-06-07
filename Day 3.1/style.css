@@ -1,0 +1,65 @@
+body{
+    font-family: sans-serif;
+    margin: 0;
+}
+
+.navbar{
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 1px 1px 5px rgb(180, 180, 180);
+}
+
+.navbar img{
+    height: 50px;
+}
+
+.menu{
+    list-style-type: none;
+}
+
+.menu li{
+    display: inline;
+    margin-right: 10px;
+}
+
+.menu a{
+    text-decoration: none;
+    color: black;
+}
+
+.service-section{
+    padding: 50px;
+}
+
+.service-section h1{
+    text-align: center;
+}
+
+.service-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+}
+
+.service{
+    background-color: blue;
+    color: white;
+    padding: 10px;
+}
+
+.button{
+    text-align: center;
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+.button a{
+    background-color: white;
+    color: blue;
+    padding: 7px 10px;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    border-radius: 10px;
+}
