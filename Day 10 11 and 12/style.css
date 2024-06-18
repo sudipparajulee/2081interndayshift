@@ -41,6 +41,12 @@ body{
     position: sticky;
     top: 0;
     z-index: 99;
+    list-style-type: none;
+}
+
+hr{
+    border: 1px solid #e9e7e7;
+
 }
 
 .menu a{
@@ -50,8 +56,30 @@ body{
     border-radius: 10px;
 }
 
+.dropdown-menu{
+    position: relative;
+}
+
 .menu a:hover{
     background-color: #c92429;
+}
+
+.dropdown{
+    position: absolute;
+    left: 0;
+    top: 30px;
+    width: 150px;
+    background-color: #e3e3e4;
+    display: none;
+}
+
+.dropdown-menu:hover .dropdown{
+    display: block;
+}
+
+.dropdown a{
+    color: black;
+    display: block;
 }
 
 .program-section{
@@ -79,10 +107,21 @@ body{
     border-radius: 10px;
     box-shadow: 1px 1px 8px rgb(215, 213, 213);
     transition: 0.5s;
+    position: relative;   
 }
 
 .program:hover{
     transform: scale(1.02);
+}
+
+.badge{
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color: red;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
 }
 
 .program img{
