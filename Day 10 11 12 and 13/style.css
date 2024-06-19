@@ -42,11 +42,11 @@ body{
     top: 0;
     z-index: 99;
     list-style-type: none;
+    margin: 0;
 }
 
 hr{
     border: 1px solid #e9e7e7;
-
 }
 
 .menu a{
@@ -80,6 +80,29 @@ hr{
 .dropdown a{
     color: black;
     display: block;
+}
+
+.title-intro{
+    background-image: url('https://honawalpur.gandaki.gov.np/images/bg.jpg');
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.title-intro-inner{
+    position: absolute;
+    inset: 0;
+    background-color: rgba(18, 22, 61, 0.581);
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 30px;
+}
+
+.title-intro-inner h3{
+    font-size: 30px;
+    font-weight: normal;
 }
 
 .program-section{
@@ -164,4 +187,47 @@ hr{
     color: white;
     padding: 5px;
     text-decoration: none;
+}
+
+
+.notice-container{
+    padding: 50px 100px;
+}
+
+.notice{
+    border-radius: 10px;
+    display: flex;  
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.notice a{
+    background-color: #c9ccd8;
+    color: black;
+    padding: 15px;
+    text-decoration: none;
+    border-radius: 10px;
+}
+
+.notice:hover{
+    background-color: #ced0da;
+}
+
+.flash-notice{
+    display: flex;
+    align-items: center;
+    padding: 30px;
+}
+
+.flash-notice p{
+    background-color: red;
+    color: white;
+    padding: 10px;
+}
+
+.flash-notice marquee{
+    background-color: rgb(239, 237, 237);
+    padding: 14px;
+    flex: 1;
 }
