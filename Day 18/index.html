@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="mydiv"></div>
+    <p id="person">Shyam</p>
+
+    <script>
+        var mydiv = document.getElementById("mydiv");
+        mydiv.innerHTML = "Hello World!";
+        // mydiv.style.color = "red";
+
+        var a = 10.5;
+        var b = "Ram";
+        var c = a+ ' ' +b;
+        mydiv.innerHTML = c;
+
+        // var name = prompt("Enter your name");
+        // var confirm = confirm("Are you " + name + "?");
+        // if(confirm)
+        // {
+        //     mydiv.innerHTML = "Hello " + name;
+        // }
+        // else
+        // {
+        //     mydiv.innerHTML = "Hello Guest";
+        // }
+
+        var person = document.getElementById("person").innerHTML;
+        
+        document.getElementById("person").innerHTML = "Hello " + person;
+    </script>
+</body>
+</html>
