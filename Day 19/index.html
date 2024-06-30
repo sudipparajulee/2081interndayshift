@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="progress-bar">
+        <div class="progress" id="progress1">30%</div>
+    </div>
+
+    <div class="progress-bar">
+        <div class="progress" id="progress2">60%</div>
+    </div>
+
+    <div class="progress-bar">
+        <div class="progress" id="progress3">90%</div>
+    </div>
+
+    <script>
+        // var count = 1;
+        // var i = setInterval(fn, 500);
+        // function fn()
+        // {
+        //     if(count >= 10)
+        //     {
+        //         clearInterval(i);
+        //     }
+        //     document.write(count + "<br>");
+        //     count++;
+        // }
+        var progress1 = document.getElementById('progress1');
+        var progress2 = document.getElementById('progress2');
+        var progress3 = document.getElementById('progress3');
+
+        var width = 1;
+        var id = setInterval(start30, 100);
+
+        function start30() {
+            if (width >= 30) {
+                clearInterval(id);
+            } else {
+                width++;
+                progress1.style.width = width + '%';
+                progress1.innerHTML = width + '%';
+            }
+        }
+
+        var width1 = 1;
+        var id1 = setInterval(start60, 100);
+
+        function start60() {
+            if (width1 >= 60) {
+                clearInterval(id1);
+            } else {
+                width1++;
+                progress2.style.width = width1 + '%';
+                progress2.innerHTML = width1 + '%';
+            }
+        }
+    </script>
+</body>
+</html>

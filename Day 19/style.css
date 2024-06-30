@@ -1,0 +1,33 @@
+body{
+    font-family: sans-serif;
+    margin: 0;
+}
+
+.progress-bar{
+    width: 80%;
+    background-color: rgb(209, 212, 215);
+    margin: 10px auto;
+    border-radius: 8px;
+}
+
+.progress{
+    background-color: green;
+    color: white;
+    padding: 10px;
+    border-radius: 8px 0 0 8px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+#progress1{
+    width: 30%;
+}
+
+#progress2{
+    width: 60%;
+}
+
+#progress3{
+    width: 90%;
+}
+
