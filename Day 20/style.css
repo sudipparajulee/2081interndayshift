@@ -1,0 +1,14 @@
+.result-container{
+    background-color: rgb(226, 229, 232);
+    width: 80%;
+    margin: 10px auto;
+    border-radius: 10px;
+}
+
+.result{
+    background-color: rgb(78, 78, 197);
+    color: white;
+    padding: 5px;
+    border-radius: 10px;
+    transition: 0.4s width;
+}

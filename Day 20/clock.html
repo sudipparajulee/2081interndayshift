@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="clock"></p>
+    <script>
+        function clock()
+        {
+            var date = new Date();
+            var hours = date.getHours();
+            var minutes = date.getMinutes();
+            var seconds = date.getSeconds();
+            document.getElementById('clock').innerHTML = check(hours) + ":" + check(minutes) + ":" + check(seconds);
+        }
+        clock();
+        setInterval(clock, 1000);
+        function check(x){
+            if(x < 10){
+                return '0' + x;
+            }
+            return x;
+        }
+    </script>
+</body>
+</html>

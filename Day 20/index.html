@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="marks-container">
+        <input type="text" id="sci" placeholder="Enter Science Marks">
+        <input type="text" id="math" placeholder="Enter Math Marks">
+        <input type="text" id="eng" placeholder="Enter English Marks">
+        <button onclick="calculate()">Calculate</button>
+    </div>
+    <div class="result-container">
+        <div class="result" id="result"></div>
+    </div>
+
+    <script>
+        var result = document.getElementById('result');
+        result.style.display = 'none';
+        function calculate()
+        {
+            var sci = document.getElementById('sci').value;
+            var math = document.getElementById('math').value;
+            var eng = document.getElementById('eng').value;
+            if(sci == '' || math == '' || eng == ''){
+                alert('Please enter all the marks');
+                return;
+            }
+            if(sci < 0 || sci > 100 || math < 0 || math > 100 || eng < 0 || eng > 100){
+                alert('Please enter marks between 0 to 100');
+                return;
+            }
+            if(isNaN(sci) || isNaN(math) || isNaN(eng)){
+                alert('Please enter valid marks');
+                return;
+            }
+            var per = (parseInt(sci) + parseInt(math) + parseInt(eng)) / 3;
+            //roundoff to 2 decimal places
+            per = per.toFixed(2);
+            result.style.display = 'block';
+            var i = 0;
+            var timer = setInterval(start, 50);
+
+            function start(){
+                if(i >= per){
+                    result.innerHTML = per + "%";
+                    clearInterval(timer);
+                }else{
+                    i++;
+                    result.style.width = i + '%';
+                    result.innerHTML = i.toFixed(2) + "%";
+                }
+            }
+        }
+    </script>
+</body>
+</html>
