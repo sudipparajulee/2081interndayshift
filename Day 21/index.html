@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body>
+    <button id="mybtn">Click</button>
+    <div class="mydiv" style="overflow: hidden;">This is my div</div>
+    <script>
+        // var btn = document.getElementById('mybtn');
+        // btn.addEventListener('dblclick', function(){
+        //     myFunction();
+        // });
+        // // btn.onclick = function(){
+        // //     myFunction();
+        // // }
+
+        // function myFunction(){
+        //     alert('Button clicked');
+        // }
+
+        $(document).ready(function(){
+            $('#mybtn').click(function(){
+                // $('.mydiv').hide();
+                // $('.mydiv').toggle();
+                // $('.mydiv').fadeOut();
+                $('.mydiv').animate({
+                    height: 'toggle',
+                    // opacity: '0',
+                }, 100);
+            });
+        });
+
+        $(document).ready(function(){
+            $('.mydiv').css('color', 'red');
+            $('.mydiv').css('background-color', 'yellow');
+        });
+    </script>
+</body>
+</html>
