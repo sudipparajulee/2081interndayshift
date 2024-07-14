@@ -5,6 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        
+        /* Slide behind text */
+        .slide:hover {
+            box-shadow: inset 18em 0 0 0 #00489e;
+        }    
+
+        /* .slide {
+            --hover: #00489e;
+        } */
+    </style>
 </head>
 <body>
     <div class="flex justify-between px-14 py-2 bg-[#034c83] text-white">
@@ -13,13 +24,31 @@
     </div>
     <div class="flex justify-between items-center px-14 py-2 bg-white shadow-md sticky top-0 z-50">
         <img src="https://bitmapitsolution.com/images/logo/logo.png" alt="" class="h-20">
-        <div>
-            <a class="p-2" href="">Home</a>
-            <a class="p-2" href="">About</a>
-            <a class="p-2" href="">Service</a>
-            <a class="p-2" href="">Projects</a>
-            <a class="p-2" href="">Blogs</a>
-            <a class="p-2" href="">Contact</a>
+        <div class="flex">
+            <div class="group p-2">
+                <a class="" href="">Home</a>
+                <div class="h-1 w-0 group-hover:w-full bg-blue-700 duration-500"></div>
+            </div>
+            <div class="group p-2">
+                <a class="" href="">About</a>
+                <div class="h-1 w-0 group-hover:w-full bg-blue-700 duration-500"></div>
+            </div>
+            <div class="group p-2">
+                <a class="" href="">Services</a>
+                <div class="h-1 w-0 group-hover:w-full bg-blue-700 duration-500"></div>
+            </div>
+            <div class="group p-2">
+                <a class="" href="">Projects</a>
+                <div class="h-1 w-0 group-hover:w-full bg-blue-700 duration-500"></div>
+            </div>
+            <div class="group p-2">
+                <a class="" href="">Blogs</a>
+                <div class="h-1 w-0 group-hover:w-full bg-blue-700 duration-500"></div>
+            </div>
+            <div class="group p-2">
+                <a class="" href="">Contact</a>
+                <div class="h-1 w-0 group-hover:w-full bg-blue-700 duration-500"></div>
+            </div>
         </div>
         <a href="" class="bg-indigo-700 text-white px-4 py-2 rounded-lg">Get IT Support</a>
     </div>
@@ -31,8 +60,8 @@
                     LET THE WORLD KNOW YOU EXIST</p>
 
                     <div class="mt-16">
-                        <a href="" class="bg-white text-indigo-900 px-16 py-5 rounded-lg">About Us</a>
-                        <a href="" class="bg-red-600 text-white px-16 py-5 rounded-lg ml-4">Contact Us</a>
+                        <a href="" class="slide bg-white  text-center hover:text-white  duration-700 delay-50 transition-all py-5 px-16 rounded-md hover:bg-[#00489e]">About Us</a>
+                        <a href="" class="slide font-semibold text-left text-white px-16 py-5  hover:bg-[#00489e] duration-700 delay-50 transition-all bg-red-700 py-4 rounded-md border-l-2 border-[#00489e]">Contact Us</a>
                     </div>
             </div>
         </div>
@@ -50,6 +79,11 @@
             </div>
         </div>
     </div>  
+
+
+    <div class="my-20 px-24">
+        <div class="slide duration-500 delay-100 transition-all hover:text-white border-l-2 border-blue-600 rounded-lg p-4 px-16 inline ">Graphics Designing</div>
+    </div>
 
     <div class="py-10">
         <p class="text-3xl text-indigo-900 text-center">Services</p>
