@@ -16,6 +16,13 @@
             --hover: #00489e;
         } */
     </style>
+
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </head>
 <body>
     <div class="flex justify-between px-14 py-2 bg-[#034c83] text-white">
@@ -175,6 +182,40 @@
     </div>
 
 
+    <div class="bg-indigo-900 py-20">
+        <p class="text-3xl text-center text-white">Testimonials</p>
+        <p class="text-xs text-center text-gray-300 mt-3">The faces behind the success of Bitmap I.T. Solution Pvt. Ltd.</p>
+
+        <!-- Slider Here  -->
+         <!-- Slider main container -->
+        <div class="swiper swiper1 w-full h-96">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+                <div class="text-center mt-5 text-white">
+                    <img src="https://bitmapitsolution.com/images/testimonial_images/bipinkandel_1684143077.jpg" alt="" class="h-24 w-24 mx-auto rounded-full">
+                    <p class="font-bold text-xl">Bipin Kandel</p>
+                    <p class="font-bold text-slate-300">Fouder of V-Group</p>
+                    <p class="mt-5 w-8/12 mx-auto text-justify">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam magni amet maiores sequi omnis? Ducimus assumenda suscipit minima ea distinctio, atque mollitia animi maxime inventore, nisi, cupiditate amet illum iusto? Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, accusamus. Quod reprehenderit nemo dignissimos, suscipit, veniam tempora consectetur ad praesentium beatae adipisci repudiandae corporis non facere! Consequatur blanditiis mollitia tempora?</p>
+                </div>
+            </div>
+            <div class="swiper-slide">Slide 2</div>
+            <div class="swiper-slide">Slide 3</div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+        
+            
+        
+          
+        </div>
+
+    </div>
+
+    
+
+
     <div class="pt-10 pb-20">
         <p class="text-3xl text-center text-indigo-900">Team Member</p>
         <p class="text-xs text-center text-indigo-500 mt-3">The faces behind the success of Bitmap I.T. Solution Pvt. Ltd.</p>
@@ -220,8 +261,10 @@
         <p class="text-xs text-center text-indigo-500 mt-3 mb-10">Recent Blog</p>
 
        <div class="grid grid-cols-3 px-10">
-            <div class="mr-4 bg-white rounded-lg shadow-lg">
-                <img src="https://bitmapitsolution.com/images/blog_images/graphic_1684144239.jpg" alt="" class="rounded-t-lg">
+            <div class="mr-4 bg-white rounded-lg shadow-lg group">
+                <div class="overflow-hidden rounded-t-lg">
+                    <img src="https://bitmapitsolution.com/images/blog_images/graphic_1684144239.jpg" alt="" class="rounded-t-lg group-hover:scale-105 duration-500">
+                </div>
                 <div class="flex justify-between p-3">
                     <div class="text-blue-800 text-xs">                     
                         <i class="ri-calendar-event-fill"></i>2023-05-15
@@ -232,8 +275,8 @@
                     </div>
                 </div>
                 <div class="px-2">
-                    <p class="text-small font-bold hover:text-indigo-900">Importance of Graphic Design for Business</p>
-                    <p class="text-xs text-indigo-900 my-2">In today's visually-driven world, the importance of graphic design for businesses cannot be overstated. Whether you're a small startup or...</p>
+                    <p class="text-small font-bold group-hover:text-indigo-700">Importance of Graphic Design for Business</p>
+                    <p class="text-xs text-indigo-900 my-2 line-clamp-2">In today's visually-driven world, the importance of graphic design for businesses cannot be overstated. Whether you're a small startup or Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel quibusdam deleniti, temporibus porro possimus maxime, soluta sed sit ipsum tenetur nihil, earum neque nesciunt aperiam inventore repudiandae beatae suscipit harum.</p>
                     <p class="text-xs font-bold pb-2">Read More</p>
                 </div>
             </div>
@@ -255,7 +298,101 @@
                     <p class="text-xs font-bold pb-2">Read More</p>
                 </div>
             </div>
+       </div>
+    </div>
+    
+    <div class="py-20 px-14">
+        <p class="text-3xl text-center text-indigo-800">Our Happy Clients</p>
+        <p class="text-xs text-center text-indigo-500 mt-3">The faces behind the success of Bitmap I.T. Solution Pvt. Ltd.</p>
 
+        <!-- Slider main container -->
+        <div class="swiper swiper2 mt-5 py-10">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+                <div class="shadow-lg rounded-lg border py-7">
+                    <img src="https://bitmapitsolution.com/images/client_images/mero%20kinmel_1670569297.png" alt="" class="h-24 mx-auto">
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="shadow-lg rounded-lg border py-7">
+                    <img src="https://bitmapitsolution.com/images/client_images/mero%20kinmel_1670569297.png" alt="" class="h-24 mx-auto">
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="shadow-lg rounded-lg border py-7">
+                    <img src="https://bitmapitsolution.com/images/client_images/mero%20kinmel_1670569297.png" alt="" class="h-24 mx-auto">
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="shadow-lg rounded-lg border py-7">
+                    <img src="https://bitmapitsolution.com/images/client_images/mero%20kinmel_1670569297.png" alt="" class="h-24 mx-auto">
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="shadow-lg rounded-lg border py-7">
+                    <img src="https://bitmapitsolution.com/images/client_images/mero%20kinmel_1670569297.png" alt="" class="h-24 mx-auto">
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="shadow-lg rounded-lg border py-7">
+                    <img src="https://bitmapitsolution.com/images/client_images/mero%20kinmel_1670569297.png" alt="" class="h-24 mx-auto">
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="shadow-lg rounded-lg border py-7">
+                    <img src="https://bitmapitsolution.com/images/client_images/mero%20kinmel_1670569297.png" alt="" class="h-24 mx-auto">
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="shadow-lg rounded-lg border py-7">
+                    <img src="https://bitmapitsolution.com/images/client_images/mero%20kinmel_1670569297.png" alt="" class="h-24 mx-auto">
+                </div>
+            </div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+        
+            
+        </div>
+
+    </div>
+
+
+
+            <script>
+                const swiper = new Swiper('.swiper1', {
+                // Optional parameters
+                direction: 'horizontal',
+                loop: true,
+                autoplay: {
+                    delay: 2500,
+                    disableOnInteraction: false,
+                },
+                // If we need pagination
+                pagination: {
+                    el: '.swiper-pagination',
+                },
+
+                });
+            </script>
+            
+            <script>
+                var swiper2 = new Swiper(".swiper2", {
+                  slidesPerView: 4,
+                  loop: true,
+                  spaceBetween: 30,
+                  pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                  },
+                  autoplay: {
+                    delay: 2500,
+                    disableOnInteraction: false,
+                },
+                });
+              </script>
     
 </body>
 </html>
