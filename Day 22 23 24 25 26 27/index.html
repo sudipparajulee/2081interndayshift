@@ -59,7 +59,7 @@
         </div>
         <a href="" class="bg-indigo-700 text-white px-4 py-2 rounded-lg">Get IT Support</a>
     </div>
-    <div class="grid grid-cols-2 bg-indigo-900 px-24 pt-14 pb-36">
+    <div class="grid lg:grid-cols-2 bg-indigo-900 px-24 pt-14 pb-36">
         <div class="flex items-center">
             <div>
                 <h1 class="font-bold text-white text-5xl leading-normal">IT Solutions & Graphics Services Company</h1>
@@ -72,7 +72,7 @@
                     </div>
             </div>
         </div>
-        <div>
+        <div class="lg:block hidden">
             <img src="https://bitmapitsolution.com/images/home.png" alt="">
         </div>
     </div>
@@ -96,7 +96,7 @@
         <p class="text-3xl text-indigo-900 text-center">Services</p>
         <p class="text-center mt-3 text-blue-500">We provide the following Services as per the need of the clients.</p>
 
-        <div class="grid grid-cols-3 gap-10 px-14">
+        <div class="grid lg:grid-cols-3 md:grid-cols-2 gap-10 px-14">
             <div class="px-4 py-12 rounded-lg shadow-lg flex gap-5 items-center">
                 <img src="https://bitmapitsolution.com/images/html.png" alt="" class="w-16 h-16">
                 <div>
@@ -220,7 +220,7 @@
         <p class="text-3xl text-center text-indigo-900">Team Member</p>
         <p class="text-xs text-center text-indigo-500 mt-3">The faces behind the success of Bitmap I.T. Solution Pvt. Ltd.</p>
 
-        <div class="grid grid-cols-4 p-10">
+        <div class="grid lg:grid-cols-4 sm:grid-cols-2 p-10">
             <div class="mr-5">
                 <div class="relative group">
                     <div class="h-72 object-cover w-full overflow-hidden">
@@ -299,6 +299,35 @@
                 </div>
             </div>
        </div>
+    </div>
+
+
+    <div class="bg-[url('https://bitmapitsolution.com/images/count_bg.jpeg')] h-96 bg-cover bg-fixed relative numbers">
+        <div class="absolute inset-0 bg-indigo-900 bg-opacity-50 flex items-center justify-center">
+            <div class="grid grid-cols-4 text-white gap-24 text-left">
+                <div class="relative text-center">
+                    <p class="text-6xl font-bold opacity-80 count">53</p>
+                    <p class="text-xl font-semibold opacity-90 mt-3">Clients</p>
+                    <span class="absolute top-0 right-5 text-4xl">+</span>
+                </div>
+                
+                <div>
+                    <p class="text-6xl font-bold opacity-80"><span class="count">80</span><sup>+</sup></p>
+                    <p class="text-xl font-semibold opacity-90 mt-3">Projects</p>
+                </div>
+                
+                <div class="relative">
+                    <p class="text-6xl font-bold opacity-80 count">1200</p>
+                    <p class="text-xl font-semibold opacity-90 mt-3">Hours of Support</p>
+                    <span class="absolute top-0 -right-2 text-4xl">+</span>
+                </div>
+                
+                <div>
+                    <p class="text-6xl font-bold opacity-80">10<sup>+</sup></p>
+                    <p class="text-xl font-semibold opacity-90 mt-3">Hard Workers</p>
+                </div>
+            </div>
+        </div>
     </div>
     
     <div class="py-20 px-14">
@@ -393,6 +422,32 @@
                 },
                 });
               </script>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script>
+   var section1 = $('.numbers').offset();
+   var hasEntered1 = false;
+   window.addEventListener('scroll', (e) => {
+       var shouldAnimate1 = (window.scrollY + window.innerHeight) >= section1.top;
+
+       if (shouldAnimate1 && !hasEntered1) {
+           hasEntered1 = true;
+
+           $('.count').each(function() {
+               $(this).prop('Counter', 0).animate({
+                   Counter: $(this).text()
+               }, {
+                   duration: 4000,
+                   easing: 'swing',
+                   step: function(now) {
+                       $(this).text(Math.ceil(now));
+                   }
+               });
+           });
+       }
+   });
+</script>
     
 </body>
 </html>
