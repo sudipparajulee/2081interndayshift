@@ -23,13 +23,20 @@
     />
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+
+
 </head>
 <body>
     <div class="flex justify-between px-14 py-2 bg-[#034c83] text-white">
         <div>Ph: 9188828882822</div>
         <div>Em: info@gmail.com</div>
     </div>
-    <div class="flex justify-between items-center px-14 py-2 bg-white shadow-md sticky top-0 z-50">
+    <div class="md:flex hidden justify-between items-center lg:px-14 px-4 py-2 bg-white shadow-md sticky top-0 z-50">
         <img src="https://bitmapitsolution.com/images/logo/logo.png" alt="" class="h-20">
         <div class="flex">
             <div class="group p-2">
@@ -59,6 +66,30 @@
         </div>
         <a href="" class="bg-indigo-700 text-white px-4 py-2 rounded-lg">Get IT Support</a>
     </div>
+
+
+    <!-- Mobile Navbar -->
+    <div class="bg-white sticky top-0 md:hidden block z-50">
+        <div class="flex justify-between items-center px-4 py-2">
+            <img src="https://bitmapitsolution.com/images/logo/logo.png" alt="" class="h-16">
+            <i class="ri-menu-line text-2xl border border-gray-400 px-4 py-2 rounded-lg" onclick="mobmenu()"></i>
+        </div>
+        <div id="mobmenu" class="py-2 hidden absolute bg-white left-0 right-0">
+            <a href="" class="block py-2 px-4 border-b">Home</a>
+            <a href="" class="block py-2 px-4 border-b">About</a>
+            <a href="" class="block py-2 px-4 border-b">Services</a>
+            <a href="" class="block py-2 px-4 border-b">Projects</a>
+            <a href="" class="block py-2 px-4 border-b">Blogs</a>
+            <a href="" class="block py-2 px-4 border-b">Contact</a>
+            <div class="my-3 px-4">
+                <a href="" class="bg-indigo-700 text-white px-4 py-2 rounded-lg">Get IT Support</a>
+            </div>
+        </div>
+    </div>
+    <!-- End of Mobile Navbar -->
+
+
+
     <div class="grid lg:grid-cols-2 bg-indigo-900 px-24 pt-14 pb-36">
         <div class="flex items-center">
             <div>
@@ -66,9 +97,9 @@
                 <p class="mt-5 text-white  text-lg">Presenting your business in a digital mode is known to be a smarter way of doing business. <br>
                     LET THE WORLD KNOW YOU EXIST</p>
 
-                    <div class="mt-16">
+                    <div class="mt-16 flex gap-4 sm:flex-row flex-col">
                         <a href="" class="slide bg-white  text-center hover:text-white  duration-700 delay-50 transition-all py-5 px-16 rounded-md hover:bg-[#00489e]">About Us</a>
-                        <a href="" class="slide font-semibold text-left text-white px-16 py-5  hover:bg-[#00489e] duration-700 delay-50 transition-all bg-red-700 py-4 rounded-md border-l-2 border-[#00489e]">Contact Us</a>
+                        <a href="" class="slide font-semibold text-center text-white px-16 py-5  hover:bg-[#00489e] duration-700 delay-50 transition-all bg-red-700 py-4 rounded-md border-l-2 border-[#00489e]">Contact Us</a>
                     </div>
             </div>
         </div>
@@ -197,7 +228,7 @@
                     <img src="https://bitmapitsolution.com/images/testimonial_images/bipinkandel_1684143077.jpg" alt="" class="h-24 w-24 mx-auto rounded-full">
                     <p class="font-bold text-xl">Bipin Kandel</p>
                     <p class="font-bold text-slate-300">Fouder of V-Group</p>
-                    <p class="mt-5 w-8/12 mx-auto text-justify">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam magni amet maiores sequi omnis? Ducimus assumenda suscipit minima ea distinctio, atque mollitia animi maxime inventore, nisi, cupiditate amet illum iusto? Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, accusamus. Quod reprehenderit nemo dignissimos, suscipit, veniam tempora consectetur ad praesentium beatae adipisci repudiandae corporis non facere! Consequatur blanditiis mollitia tempora?</p>
+                    <p class="mt-5 md:w-8/12 w-10/12 mx-auto text-justify">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam magni amet maiores sequi omnis? Ducimus assumenda suscipit minima ea distinctio, atque mollitia animi maxime inventore, nisi, cupiditate amet illum iusto? Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, accusamus. Quod reprehenderit nemo dignissimos, suscipit, veniam tempora consectetur ad praesentium beatae adipisci repudiandae corporis non facere! Consequatur blanditiis mollitia tempora?</p>
                 </div>
             </div>
             <div class="swiper-slide">Slide 2</div>
@@ -409,13 +440,26 @@
             
             <script>
                 var swiper2 = new Swiper(".swiper2", {
-                  slidesPerView: 4,
                   loop: true,
                   spaceBetween: 30,
                   pagination: {
                     el: ".swiper-pagination",
                     clickable: true,
                   },
+                  breakpoints: {
+                    640: {
+                    slidesPerView: 2,
+                    spaceBetween: 20,
+                    },
+                    768: {
+                    slidesPerView: 4,
+                    spaceBetween: 40,
+                    },
+                    1024: {
+                    slidesPerView: 5,
+                    spaceBetween: 50,
+                    },
+                },
                   autoplay: {
                     delay: 2500,
                     disableOnInteraction: false,
@@ -449,5 +493,17 @@
    });
 </script>
     
+<script>
+    function mobmenu() {
+        // var x = document.getElementById("mobmenu");
+        // if(x.classList.contains('hidden')) {
+        //     x.classList.remove('hidden');
+        // } else {
+        //     x.classList.add('hidden');
+        // }
+        // x.classList.toggle('hidden');
+        $('#mobmenu').slideToggle();
+    }
+</script>
 </body>
 </html>
