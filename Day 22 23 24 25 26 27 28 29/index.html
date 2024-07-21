@@ -29,6 +29,16 @@
     rel="stylesheet"
 />
 
+<link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+
+  <style>
+    .mypath{
+        clip-path: polygon(100% 0, 0 100%, 100% 100%);
+    }
+  </style>
 
 </head>
 <body>
@@ -89,6 +99,8 @@
     <!-- End of Mobile Navbar -->
 
 
+    
+
 
     <div class="grid lg:grid-cols-2 bg-indigo-900 px-24 pt-14 pb-36">
         <div class="flex items-center">
@@ -104,7 +116,7 @@
             </div>
         </div>
         <div class="lg:block hidden">
-            <img src="https://bitmapitsolution.com/images/home.png" alt="">
+            <img src="https://bitmapitsolution.com/images/home.png" alt="" class="animate__animated animate__heartBeat animate__infinite animate__slow">
         </div>
     </div>
     <img src="https://bitmapitsolution.com/images/home_bottom_shape.png" alt="" class="h-56 w-full -mt-52">
@@ -123,12 +135,24 @@
         <div class="slide duration-500 delay-100 transition-all hover:text-white border-l-2 border-blue-600 rounded-lg p-4 px-16 inline ">Graphics Designing</div>
     </div>
 
+    <div class="flex bg-blue-800">
+        <div class="bg-blue-800 py-10 flex-1">
+
+        </div>
+        <div class="mypath w-12 bg-orange-500">
+
+        </div>
+        <div class="bg-orange-500 py-10 flex-1">
+
+        </div>
+    </div>
+
     <div class="py-10">
         <p class="text-3xl text-indigo-900 text-center">Services</p>
         <p class="text-center mt-3 text-blue-500">We provide the following Services as per the need of the clients.</p>
 
         <div class="grid lg:grid-cols-3 md:grid-cols-2 gap-10 px-14">
-            <div class="px-4 py-12 rounded-lg shadow-lg flex gap-5 items-center">
+            <div class="px-4 py-12 rounded-lg shadow-lg flex gap-5 items-center animate__animated animate__fadeInLeft wow">
                 <img src="https://bitmapitsolution.com/images/html.png" alt="" class="w-16 h-16">
                 <div>
                     <h2 class="font-bold text-xl">Website Development</h2>
@@ -504,6 +528,10 @@
         // x.classList.toggle('hidden');
         $('#mobmenu').slideToggle();
     }
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js" integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script>
+    new WOW().init();
 </script>
 </body>
 </html>
