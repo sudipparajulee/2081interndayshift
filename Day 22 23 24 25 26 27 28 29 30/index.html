@@ -15,6 +15,10 @@
         /* .slide {
             --hover: #00489e;
         } */
+
+        html{
+            scroll-behavior: smooth;
+        }
     </style>
 
     <link
@@ -41,12 +45,16 @@
   </style>
 
 </head>
-<body>
-    <div class="flex justify-between px-14 py-2 bg-[#034c83] text-white">
-        <div>Ph: 9188828882822</div>
-        <div>Em: info@gmail.com</div>
+<body class="dark:bg-gray-600">
+    <div class="fixed right-10 bottom-10 z-50 hidden" id="gotop">
+        <i class="ri-arrow-up-line text-4xl bg-blue-800 text-white rounded-lg cursor-pointer" onclick="gotop()"></i>
     </div>
-    <div class="md:flex hidden justify-between items-center lg:px-14 px-4 py-2 bg-white shadow-md sticky top-0 z-50">
+    <div class="flex justify-between px-14 py-2 bg-[#034c83] text-white">
+        <a href="tel:+977-9855011559">Ph: 9188828882822</a>
+        <a href="mailto:info@bitmapitsolution.com">Em: info@gmail.com</a>
+        <a href="https://wa.me/9855011559">whatsapp</a>
+    </div>
+    <div class="md:flex hidden justify-between items-center lg:px-14 px-4 py-2 dark:bg-gray-300 bg-white shadow-md sticky top-0 z-50">
         <img src="https://bitmapitsolution.com/images/logo/logo.png" alt="" class="h-20">
         <div class="flex">
             <div class="group p-2">
@@ -532,6 +540,22 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js" integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script>
     new WOW().init();
+</script>
+<script>
+    function gotop() {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    }
+
+    window.addEventListener('scroll', function() {
+        if(window.scrollY > 200) {
+            $('#gotop').fadeIn();
+        } else {
+            $('#gotop').fadeOut();
+        }
+    });
 </script>
 </body>
 </html>
